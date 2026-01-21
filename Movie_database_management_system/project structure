@@ -1,0 +1,22 @@
+movie_db/
+├── app.py                # Main Flask application
+├── database.py           # Database initialization and operations
+├── models.py             # Database models
+├── static/
+│   ├── css/
+│   │   └── style.css     # Custom CSS
+│   └── images/           # Movie poster images
+├── templates/
+│   ├── admin/            # Admin-specific templates
+│   │   ├── dashboard.html
+│   │   ├── add_movie.html
+│   │   ├── edit_movie.html
+│   │   └── users.html
+│   ├── auth/             # Authentication templates
+│   │   ├── login.html
+│   │   └── signup.html
+│   ├── base.html         # Base template
+│   ├── index.html        # Home page
+│   ├── movie_detail.html # Movie details page
+│   └── search.html       # Search results page
+└── requirements.txt      # Python dependencies

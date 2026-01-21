@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Edit Movie</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" name="title" value="{{ movie.title }}" required>
+        </div>
+        <div class="form-group">
+            <label for="director">Director</label>
+            <input type="text" class="form-control" id="director" name="director" value="{{ movie.director }}" required>
+        </div>
+        <div class="form-group">
+            <label for="year">Year</label>
+            <input type="number" class="form-control" id="year" name="year" value="{{ movie.year }}" required>
+        </div>
+        <div class="form-group">
+            <label for="genre">Genre</label>
+            <input type="text" class="form-control" id="genre" name="genre" value="{{ movie.genre }}" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="3" required>{{ movie.description }}</textarea>
+        </div>
+        <div class="form-group">
+            <label for="poster">Poster Image (leave blank to keep current)</label>
+            <input type="file" class="form-control-file" id="poster" name="poster">
+            {% if movie.poster %}
+                <small class="form-text text-muted">
+                    Current: <a href="{{ url_for('static', filename=movie.poster) }}" target="_blank">View</a>
+                </small>
+            {% endif %}
+        </div>
+        <button type="submit" class="btn btn-primary">Update Movie</button>
+        <a href="{{ url_for('admin_dashboard') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
