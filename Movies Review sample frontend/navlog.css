@@ -1,0 +1,5 @@
+.navbar{ list-style-type:none;text-align:center;position:fixed;}
+#page{float: left;}
+.active{background-color:green;}
+li a{display:block;color:black;text-align:center;text-decoration:none;padding:14px 16px;}
+li a:hover{background-color:red;}

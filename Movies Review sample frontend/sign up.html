@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>sign up</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+<h1 align="center">Sign up</h1>
+<hr>
+<div class="container">
+
+<form>
+<label>First Name:</label><br>
+<input type="text" name="fname" placeholder="Enter firstname" id="fn" pattern="[A-Z][a-z][ .]" required>
+<br><br>
+
+<label>Middle Name:</label><br>
+<input type="text" name="mname" placeholder="Enter middlename" id="mn" pattern="[A-Z][a-z][ .]"s>
+<br><br>
+<label>Last Name:</label><br>
+<input type="text" name="lname" placeholder="Enter lastname" id="ln" pattern="[A-Z][a-z][ .]" required>
+<br><br>
+<label>User Name:</label><br>
+<input type="text" name="uname" placeholder="use alphanumeric" id="un" pattern="[A-Z][a-z][ .]" required>
+<br><br>
+<label>Mobilenumber (with countrycode):</label><br>
+<select maxlength="2">
+<option>+91</option>
+<option>+65</option>
+<option>+45</option> 
+</select>
+<input type="text" placeholder="0000 0000 00" name="mnum" id="mno" pattern="[0-9]" max="10">
+<br><br>
+<label>Email:</label><br>
+<input type="email" value="@gmail.com" id="mail" name="mail" >
+<br><br>
+<label>Genral:</label><br>
+<input type="radio" name="genral" checked> Male  
+<input type="radio" name="genral"> Female 
+<input type="radio" name="genral"> Other 
+<br><br>
+<label>Date of Birth:</label>&nbsp;
+<input type="date" name="dob">
+<br><br>
+<label>Language:</label><br>
+<input type="checkbox" name="lan"> Tamil<br>
+<input type="checkbox" name="lan"> English<br>
+<input type="checkbox" name="lan"> Japanise<br>
+<input type="checkbox" name="lan"> Hindi<br><br>
+<label>What is your view aboat movies?</label><br>
+<textarea cols="35" rows="5">type here...</textarea>
+<br><br>
+<div class="form-group">
+<label>Create password:</label><br>
+<input type="text" name="pwd" placeholder="min 8-character" minlegnth="8"></div>
+
+
+<label>Comfirm password:</label><br>
+<input type="password" name="pwd" placeholder="same as comfirmpassword" minlegnth="8">
+<br><br>
+<label>OTP:</label><br>
+<input type="text" max=6 placeholder="Enter OTP">
+<button type="button" name="resend" class="btn btn-danger">resend OTP</button>
+<br><br>
+<input type="submit" name="submit" value="submit">
+</form><hr>
+<p>Already have an account?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button"><a href="sing in.html">Log in</a>
+</button>
+</div>
+</body>
+</html>
